@@ -1,0 +1,23 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map sass:css",
+    "sass:watch": "sass --no-source-map sass:css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldiaby/Natours-Project.git"
+  },
+  "author": "Eldiaby Hosny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eldiaby/Natours-Project/issues"
+  },
+  "homepage": "https://github.com/eldiaby/Natours-Project#readme",
+  "devDependencies": {
+    "sass": "^1.82.0"
+  }
+}
