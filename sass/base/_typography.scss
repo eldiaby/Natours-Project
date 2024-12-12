@@ -1,0 +1,41 @@
+@use '../abstracts/variables';
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.7;
+  color: variables.$color-grey-dark;
+  padding: 30px;
+  font-size: 1.6rem;
+  /* font-weight: 400;  */
+}
+
+.main-heading {
+  text-transform: uppercase;
+  color: variables.$color-white;
+
+  /* -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
+
+  &--main {
+    display: block;
+    font-size: 6.4rem;
+    font-weight: 400;
+    letter-spacing: 3.6rem;
+
+    animation-name: moveInLeft;
+    animation-duration: variables.$animation-duration;
+    animation-timing-function: ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+
+    animation-name: moveInRight;
+    animation-duration: variables.$animation-duration;
+    animation-timing-function: ease-out;
+  }
+}
