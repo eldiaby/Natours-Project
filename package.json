@@ -4,8 +4,8 @@
   "description": "landing page for natours",
   "main": "index.js",
   "scripts": {
-    "sass:build": "sass sass/*.scss css/ --no-source-map",
-    "sass:watch": "sass sass/*.scss css/ --no-source-map --watch"
+    "sass:build": "sass sass:css/ --no-source-map",
+    "sass:watch": "sass sass:css/ --no-source-map --watch"
   },
   "repository": {
     "type": "git",

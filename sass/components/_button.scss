@@ -3,6 +3,7 @@
 .btn {
   &:link,
   &:visited {
+    font-size: variables.$defualt-font-size;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.8rem 4.2rem;
@@ -88,5 +89,37 @@
     animation: moveInBottom variables.$animation-duration ease-out 0.75s;
 
     animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: variables.$defualt-font-size;
+    color: variables.$color-primary;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+    border-bottom: solid currentColor 0.1rem;
+  }
+
+  &:hover {
+    background-color: variables.$color-primary;
+    color: variables.$color-white;
+    box-shadow: 0 1rem 2rem rgba(variables.$color-black, 0.15);
+    -webkit-transform: translateY(-0.2rem);
+    -moz-transform: translateY(-0.2rem);
+    -ms-transform: translateY(-0.2rem);
+    -o-transform: translateY(-0.2rem);
+    transform: translateY(-0.2rem);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem rem rgba(variables.$color-black, 0.15);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
   }
 }

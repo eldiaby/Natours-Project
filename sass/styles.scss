@@ -8,7 +8,9 @@
 @use './base/utilities';
 
 @use './components/button';
+@use './components/composition';
 
 @use './layout/header';
 @use './layout/grid';
+
 @use './pages/home';
