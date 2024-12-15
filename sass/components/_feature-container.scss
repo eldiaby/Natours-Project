@@ -1,0 +1,44 @@
+@use '../abstracts/variables';
+
+.feature-container {
+  background-color: rgba(variables.$color-white, 0.8);
+  padding: 2.4rem;
+  font-size: 1.4rem;
+  text-align: center;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 0.4rem;
+  box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.15);
+  &:hover {
+    -webkit-transform: translateY(-1.5rem) scale(1.05);
+    -moz-transform: translateY(-1.5rem) scale(1.05);
+    -ms-transform: translateY(-1.5rem) scale(1.05);
+    -o-transform: translateY(-1.5rem) scale(1.05);
+    transform: translateY(-1.5rem) scale(1.05);
+  }
+
+  &__icon {
+    font-size: 6.4rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      variables.$color-primary-light,
+      variables.$color-primary-dark
+    );
+
+    background-clip: text;
+
+    color: transparent;
+  }
+
+  &__text {
+  }
+}

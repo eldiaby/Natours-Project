@@ -4,3 +4,29 @@
   background-color: variables.$color-grey-light-1;
   padding: 24rem 0;
 }
+
+.section-features {
+  padding: 20rem 0;
+  margin-top: -10rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(variables.$color-primary-light, 0.8),
+      rgba(variables.$color-primary-dark, 0.8)
+    ),
+    url('../img/nat-4.jpg');
+  background-size: cover;
+
+  -webkit-transform: skewY(-7deg);
+  -moz-transform: skewY(-7deg);
+  -ms-transform: skewY(-7deg);
+  -o-transform: skewY(-7deg);
+  transform: skewY(-7deg);
+
+  & > * {
+    -webkit-transform: skewY(7deg);
+    -moz-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
+    -o-transform: skewY(7deg);
+    transform: skewY(7deg);
+  }
+}
