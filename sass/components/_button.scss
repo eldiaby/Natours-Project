@@ -1,6 +1,7 @@
 @use '../abstracts/variables';
 
 .btn {
+  &,
   &:link,
   &:visited {
     font-size: variables.$defualt-font-size;
@@ -21,6 +22,10 @@
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+
+    // For <button> element
+    border: 0;
+    cursor: pointer;
   }
 
   &:hover {
@@ -43,7 +48,8 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
     -webkit-transform: translateY(-0.1rem);
     -moz-transform: translateY(-0.1rem);
     -ms-transform: translateY(-0.1rem);
@@ -51,6 +57,9 @@
     transform: translateY(-0.1rem);
 
     box-shadow: 0 0.5rem 1rem rgba(variables.$color-black, 0.2);
+
+    // For <button> element
+    outline: none;
   }
 
   &--white {
