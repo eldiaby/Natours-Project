@@ -178,19 +178,19 @@
 
   &__ckeckbox:checked + &__button &__icon::before {
     top: 0;
-    transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     -o-transform: rotate(135deg);
+    transform: rotate(135deg);
   }
 
   &__ckeckbox:checked + &__button &__icon::after {
     top: 0;
-    transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
   }
 }
