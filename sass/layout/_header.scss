@@ -1,3 +1,4 @@
+@use '../abstracts/mixins';
 @use '../abstracts/variables';
 
 .header {
@@ -15,6 +16,10 @@
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
   /* clip-path: polygon(0 0, 100% 50%, 0 100%);  Challinge to make a traiangle */
+
+  @include mixins.respond(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
 
   &__logo-container {
     position: absolute;

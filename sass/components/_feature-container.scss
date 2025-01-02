@@ -1,3 +1,4 @@
+@use '../abstracts/mixins';
 @use '../abstracts/variables';
 
 .feature-container {
@@ -24,6 +25,10 @@
     transform: translateY(-1.5rem) scale(1.05);
   }
 
+  @include mixins.respond(tab-port) {
+    padding: 1.8rem;
+  }
+
   &__icon {
     font-size: 6.4rem;
     margin-bottom: 0.5rem;
@@ -37,6 +42,10 @@
     background-clip: text;
 
     color: transparent;
+
+    @include mixins.respond(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &__text {

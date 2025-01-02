@@ -1,11 +1,10 @@
+@use '../abstracts/mixins';
 @use '../abstracts/variables';
 
 body {
-  margin: 0;
   font-family: 'Lato', sans-serif;
   line-height: 1.7;
   color: variables.$color-grey-dark;
-  padding: 30px;
   font-size: 1.6rem;
   /* font-weight: 400;  */
 }
@@ -26,6 +25,11 @@ body {
     animation-name: moveInLeft;
     animation-duration: variables.$animation-duration;
     animation-timing-function: ease-out;
+
+    @include mixins.respond(phone) {
+      letter-spacing: 1.2rem;
+      font-size: 4.2rem;
+    }
   }
 
   &--sub {
@@ -37,6 +41,10 @@ body {
     animation-name: moveInRight;
     animation-duration: variables.$animation-duration;
     animation-timing-function: ease-out;
+
+    @include mixins.respond(phone) {
+      letter-spacing: 0.6rem;
+    }
   }
 }
 
@@ -66,6 +74,14 @@ body {
     -o-transform: skewY(2deg) skewX(15deg) scale(1.1);
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(variables.$color-black, 0.2);
+  }
+
+  @include mixins.respond(tab-port) {
+    font-size: 3.2rem;
+  }
+
+  @include mixins.respond(phone) {
+    font-size: 2.4rem;
   }
 }
 

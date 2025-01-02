@@ -1,9 +1,14 @@
+@use '../abstracts/mixins';
 @use '../abstracts/variables';
 
 .section-about {
   background-color: variables.$color-grey-light-1;
   padding: 24rem 0;
   margin-top: -20vh;
+
+  @include mixins.respond(tab-port) {
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -30,18 +35,30 @@
     -o-transform: skewY(7deg);
     transform: skewY(7deg);
   }
+
+  @include mixins.respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-tours {
   background-color: variables.$color-grey-light-1;
   padding: 24rem 0 15rem 0;
   margin-top: -10rem;
+
+  @include mixins.respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   position: relative;
   padding: 15rem 0;
   // background-color: variables.$color-grey-light-1;
+
+  @include mixins.respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .section-booking {
@@ -51,6 +68,10 @@
     variables.$color-primary-light,
     variables.$color-primary-dark
   );
+
+  @include mixins.respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {

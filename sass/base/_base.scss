@@ -23,3 +23,12 @@ html {
     font-size: 75%; //1rem = 12, 12/16
   }
 }
+
+body {
+  margin: 0;
+  padding: 30px;
+
+  @include mixins.respond(tab-port) {
+    padding: 0;
+  }
+}

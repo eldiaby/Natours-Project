@@ -1,3 +1,4 @@
+@use '../abstracts/mixins';
 @use '../abstracts/variables';
 .navigation {
   &__ckeckbox {
@@ -22,6 +23,11 @@
 
     text-align: center;
     cursor: pointer;
+
+    @include mixins.respond(tab-port) {
+      top: 3.2rem;
+      right: 3.2rem;
+    }
   }
 
   &__background {
@@ -45,11 +51,17 @@
     -ms-transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     -o-transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-    //Developmentperpose//-webkit-transform: scale(80);
+    //Developmentperpose
+    //-webkit-transform: scale(80);
     //-moz-transform: scale(80);
     //-ms-transform: scale(80);
     //-o-transform: scale(80);
     //transform: scale(80);
+
+    @include mixins.respond(tab-port) {
+      top: 3.4rem;
+      right: 3.4rem;
+    }
   }
 
   &__nav {

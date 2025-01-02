@@ -8,15 +8,33 @@
 
   &:not(:last-child) {
     margin-bottom: variables.$gutter-horizontal;
+
+    @include mixins.respond(tab-port) {
+      margin-bottom: variables.$gutter-vertical-small;
+    }
   }
 
   @include mixins.clearfix;
+
+  @include mixins.respond(tab-port) {
+    max-width: 52rem;
+    padding: 0 3.2rem;
+  }
 
   [class^='col-'] {
     float: left;
 
     &:not(:last-child) {
       margin-right: variables.$gutter-horizontal;
+
+      @include mixins.respond(tab-port) {
+        margin-right: 0;
+        margin-bottom: variables.$gutter-vertical-small;
+      }
+    }
+
+    @include mixins.respond(tab-port) {
+      width: 100% !important; // To over write any another styling
     }
   }
 
