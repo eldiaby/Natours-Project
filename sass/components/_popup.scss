@@ -34,11 +34,11 @@
     -ms-transition: all 0.4s cubic-bezier(0.48, -0.57, 0.63, 1.8);
     -o-transition: all 0.4s cubic-bezier(0.48, -0.57, 0.63, 1.8);
     transition: all 0.4s cubic-bezier(0.48, -0.57, 0.63, 1.8);
-    -webkit-transform: translate(-50%, -50%) scale(0.25);
-    -moz-transform: translate(-50%, -50%) scale(0.25);
-    -ms-transform: translate(-50%, -50%) scale(0.25);
-    -o-transform: translate(-50%, -50%) scale(0.25);
-    transform: translate(-50%, -50%) scale(0.25);
+    -webkit-transform: translate(-50%, -50%) scale(0.1);
+    -moz-transform: translate(-50%, -50%) scale(0.1);
+    -ms-transform: translate(-50%, -50%) scale(0.1);
+    -o-transform: translate(-50%, -50%) scale(0.1);
+    transform: translate(-50%, -50%) scale(0.1);
   }
 
   // Active state
