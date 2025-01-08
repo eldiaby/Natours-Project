@@ -509,6 +509,47 @@ body {
   font-size: 6.4rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 56.25em) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+  .card__side--back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .card:hover .card__side--front {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  .card__details {
+    padding: 1.2rem 3.2rem;
+  }
+  .card__cta {
+    position: relative;
+    top: 0%;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+  .card__price-box {
+    margin-bottom: 3.2rem;
+  }
+  .card__price-value {
+    font-size: 4.2rem;
+  }
+}
 
 .composition {
   position: relative;
@@ -660,6 +701,11 @@ body {
   -o-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
 }
+@media only screen and (max-width: 56.25em) {
+  .form__input {
+    width: 100%;
+  }
+}
 .form__input:focus {
   outline: 0;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
@@ -696,6 +742,12 @@ body {
   width: 49%;
   display: inline-block;
 }
+@media only screen and (max-width: 56.25em) {
+  .form__radio-group {
+    width: 100%;
+    display: inline-block;
+  }
+}
 .form__radio-input {
   display: none;
 }
@@ -706,6 +758,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .form__radio-label {
+    justify-content: flex-start;
+  }
 }
 .form__radio-button {
   width: 3.2rem;
@@ -864,6 +921,22 @@ body {
   -o-transform: skewX(-12deg);
   transform: skewX(-12deg);
 }
+@media only screen and (max-width: 56.25em) {
+  .story {
+    width: 100%;
+    padding: 4.2rem;
+    padding-left: 7.2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story {
+    -webkit-transform: skew(0);
+    -moz-transform: skew(0);
+    -ms-transform: skew(0);
+    -o-transform: skew(0);
+    transform: skew(0);
+  }
+}
 .story__shape {
   width: 15rem;
   height: 15rem;
@@ -876,6 +949,15 @@ body {
   -o-transform: translateX(-3.2rem) skewX(12deg);
   transform: translateX(-3.2rem) skewX(12deg);
   position: relative;
+}
+@media only screen and (max-width: 37.5em) {
+  .story__shape {
+    -webkit-transform: translate(-3.2rem) skew(0);
+    -moz-transform: translate(-3.2rem) skew(0);
+    -ms-transform: translate(-3.2rem) skew(0);
+    -o-transform: translate(-3.2rem) skew(0);
+    transform: translate(-3.2rem) skew(0);
+  }
 }
 .story__image {
   height: 100%;
@@ -916,6 +998,15 @@ body {
   -ms-transform: skewX(12deg);
   -o-transform: skewX(12deg);
   transform: skewX(12deg);
+}
+@media only screen and (max-width: 37.5em) {
+  .story__text {
+    -webkit-transform: skew(0);
+    -moz-transform: skew(0);
+    -ms-transform: skew(0);
+    -o-transform: skew(0);
+    transform: skew(0);
+  }
 }
 .story:hover .story__caption {
   opacity: 1;
@@ -1349,6 +1440,27 @@ body {
   -o-border-radius: 0.4rem;
   border-radius: 0.4rem;
 }
+@media only screen and (max-width: 75em) {
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 71%), url("../img/nat-10.jpg");
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .book {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url("../img/nat-10.jpg");
+  }
+}
 .book__form {
   width: 50%;
+}
+@media only screen and (max-width: 75em) {
+  .book__form {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .book__form {
+    width: 100%;
+  }
 }

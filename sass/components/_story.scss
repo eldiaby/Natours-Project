@@ -1,3 +1,4 @@
+@use '../abstracts/mixins';
 @use '../abstracts/variables';
 
 .story {
@@ -17,6 +18,21 @@
   -ms-transform: skewX(-12deg);
   -o-transform: skewX(-12deg);
   transform: skewX(-12deg);
+
+  @include mixins.respond(tab-port) {
+    width: 100%;
+    padding: 4.2rem;
+    padding-left: 7.2rem;
+  }
+
+  @include mixins.respond(phone) {
+    -webkit-transform: skew(0);
+    -moz-transform: skew(0);
+    -ms-transform: skew(0);
+    -o-transform: skew(0);
+    transform: skew(0);
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -28,8 +44,14 @@
     -ms-transform: translateX(-3.2rem) skewX(12deg);
     -o-transform: translateX(-3.2rem) skewX(12deg);
     transform: translateX(-3.2rem) skewX(12deg);
-
     position: relative;
+    @include mixins.respond(phone) {
+      -webkit-transform: translate(-3.2rem) skew(0);
+      -moz-transform: translate(-3.2rem) skew(0);
+      -ms-transform: translate(-3.2rem) skew(0);
+      -o-transform: translate(-3.2rem) skew(0);
+      transform: translate(-3.2rem) skew(0);
+    }
   }
   &__image {
     height: 100%;
@@ -74,6 +96,14 @@
     -ms-transform: skewX(12deg);
     -o-transform: skewX(12deg);
     transform: skewX(12deg);
+
+    @include mixins.respond(phone) {
+      -webkit-transform: skew(0);
+      -moz-transform: skew(0);
+      -ms-transform: skew(0);
+      -o-transform: skew(0);
+      transform: skew(0);
+    }
   }
 
   &:hover .story__caption {
