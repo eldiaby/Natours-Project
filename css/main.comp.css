@@ -118,6 +118,11 @@ body {
   }
 }
 
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
 body {
   font-family: "Lato", sans-serif;
   line-height: 1.7;
@@ -509,7 +514,7 @@ body {
   font-size: 6.4rem;
   font-weight: 300;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card {
     height: auto;
     border-radius: 3px;
@@ -1179,7 +1184,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* clip-path: polygon(0 0, 100% 50%, 0 100%);  Challinge to make a traiangle */
 }
-@media (min-resolution: 192dpi) and (min-width: 37.5erm), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5erm), (min-width: 125em) {
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5erm), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5erm), only screen and (min-width: 125em) {
   .header {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   }
