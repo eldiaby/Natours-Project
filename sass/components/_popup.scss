@@ -16,6 +16,14 @@
   -ms-transition: all variables.$animation-duration-short ease-in;
   -o-transition: all variables.$animation-duration-short ease-in;
   transition: all variables.$animation-duration-short ease-in;
+
+  @supports (backdrop-filter: blur(10px)) or
+    (-webkit-backdrop-filter: blur(10px)) {
+    background-color: rgba(variables.$color-black, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
   &__content {
     @include mixins.absCenter;
     width: 75%;
